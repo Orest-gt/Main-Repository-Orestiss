@@ -22,3 +22,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+'''
+Kinda wrong, i'm bored to fix it, i made a new one
+'''
