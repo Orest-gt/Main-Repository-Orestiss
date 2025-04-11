@@ -5,7 +5,7 @@ from dataset import *
 
 def general_deco(func, *args, **kwargs):
     def wrap():
-        print(f"\nStarting {func.__name__}\n")
+        print(f"\nStarting {func.__name__}...\n")
         func(*args, **kwargs)
         print(f"\nEnding {func.__name__}...\n")
     return wrap
