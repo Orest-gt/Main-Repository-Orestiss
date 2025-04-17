@@ -1,13 +1,12 @@
 import socket
 import threading
 from tqdm import tqdm
-import numpy as np
 
-ports = list(range(0, 10000))
+ports = list(range(0, 100))
 host = input("Website: ")
 lock = threading.Lock()
 
-open_ones = np.array([])
+open_ones = []
 
 def search(start, end):
     for port in range(start, end):
@@ -23,7 +22,7 @@ def search(start, end):
                 with lock:
                     if res == 0:
                         #print(f"{port}: Open!")
-                        np.append(open_ones, port)
+                        open_ones.append(port)
             #except:
                 #return "Problem!"
 
