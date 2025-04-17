@@ -2,7 +2,7 @@ import socket
 import threading
 from tqdm import tqdm
 
-ports = list(range(0, 1000))
+ports = list(range(0, 10000))
 host = 'blogs.sch.gr'
 lock = threading.Lock()
 
