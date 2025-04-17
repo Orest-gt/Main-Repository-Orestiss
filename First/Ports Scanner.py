@@ -3,7 +3,7 @@ import threading
 from tqdm import tqdm
 
 ports = list(range(0, 10000))
-host = 'blogs.sch.gr'
+host = input("Website: ")
 lock = threading.Lock()
 
 def search():
